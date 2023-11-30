@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-_ = '#pythoniscool';exec('for i in range(1):print(_)')
+__import__("os").write(1, "#pythoniscool\n".encode("UTF-8"))
