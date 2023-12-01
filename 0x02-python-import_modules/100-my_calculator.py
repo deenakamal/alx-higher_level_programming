@@ -20,5 +20,5 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
     for i in range(4):
-        if op == po_[iterat]:
+        if op == po_[i]:
             print("{} {} {} = {}".format(a, operator, b, calc_[i](a, b)))
