@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
-
 /**
  * is_palindrome - check a palindrome.
  *
@@ -9,6 +8,7 @@
  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  *
  */
+int get_palindrome(listint_t **head, listint_t *last_);
 int is_palindrome(listint_t **head)
 {
 	if (!head || !(*head))
@@ -21,15 +21,14 @@ int is_palindrome(listint_t **head)
  * @last_: the last item in list
  * Return: 1 or 0
  */
-int get_palindrome(listint_t **head, listint_t last_)
+int get_palindrome(listint_t **head, listint_t *last_)
 {
 	if (last_ == NULL)
 		return (1);
 
-	if (get_palindrome(head, last_->next) &&
-			(*head)->n == last_0>n)
+	if (get_palindrome(head, last_->next) && (*head)->n == last_->n)
 	{
-		*head = (*head_->next);
+		*head = (*head)->next;
 		return (1);
 	}
 	return (0);
