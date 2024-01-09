@@ -2,6 +2,6 @@
 """ inherits_from Module """
 
 
-def inherits_from(obj, a_class):
-    """ return if an object is a subclass of a class or not"""
-    return isinstance(obj, a_class)
+def is_kind_of_class(obj, a_class):
+    """ check for  an object if the object is an instance of"""
+    return type(obj)
