@@ -1,0 +1,2 @@
+-- displays the average temperature
+
