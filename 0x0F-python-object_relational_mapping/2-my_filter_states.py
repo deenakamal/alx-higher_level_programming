@@ -14,7 +14,7 @@ if __name__ == "__main__":
                            charset="utf8")
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM states WHERE name LIKE BINARY\
-            '{}' ORDER BY id ASC".format(state_name))
+            '{}' ORDER BY id ASC".format(sys.argv[4]))
 
     rows = cursor.fetchall()
     for row in rows:
