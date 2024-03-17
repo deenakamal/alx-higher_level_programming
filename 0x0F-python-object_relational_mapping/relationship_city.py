@@ -2,7 +2,7 @@
 """Module desfines city class"""
 
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base, relationship
+from sqlalchemy.ext.declarative import declarative_base
 from relationship_state import Base, State
 
 
