@@ -19,7 +19,7 @@ if __name__ == "__main__":
     session = Session()
 
     query = State(name="Louisiana")
-    session.add(state)
+    session.add(query)
     session.commit()
     print(query.id)
     session.close()
