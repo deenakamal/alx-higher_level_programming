@@ -13,8 +13,8 @@ if __name__ == "__main__":
                            password=db_password, database=db_name,
                            charset="utf8")
     cursor = conn.cursor()
-    cursor.execute("SELECT cities.name FROM"
-                   "cities INNER JOIN states ON states.id=cities.state_id"
+    cursor.execute("SELECT cities.name FROM cities "
+                   "INNER JOIN states ON states.id=cities.state_id "
                    "WHERE states.name=%s", [sys.argv[4]])
 
     rows = cursor.fetchall()
