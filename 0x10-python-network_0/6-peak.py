@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-"""Peak."""
+"""Find a Peak"""
+
 
 def find_peak(list_of_integers):
-    """Find a peak in a list of unsorted integers."""
+    """Functon that Finds a peak in a list of unsorted integers"""
+    if not list_of_integers:
+        return None
+
     return (max(list_of_integers))
